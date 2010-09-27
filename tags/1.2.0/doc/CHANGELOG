@@ -1,0 +1,35 @@
+1.2.0
+-----------------
+Implemented feature : SIGTERM and SIGINT calls are now caught and import is smoothly and safely interrupted (PCNTL extension needed)
+Fixed issue : Scheduled imports - schedule is shifting - http://bit.ly/cJPe5F
+Fixed issue : Editing a scheduled import may add empty options - http://bit.ly/bXYAPH
+Scheduled imports are now linked from import list
+
+
+1.1.0
+-----------------
+Added manual frequency support for scheduled imports (not less than every 5 minutes)
+Added import duration monitor
+Fixed issue : Imports are blocked after a transaction error
+Fixed some i18n issues
+Fixed a notice in SQLIImportHandlerOptions::__toString()
+
+1.0.3
+-----------------
+Fixed a notice in SQLIImportFactory::cleanup()
+Fixed issue with section assignement on new sqli content object - http://bit.ly/aD8O61
+Implemented shorthand method to easily handle HTML in content API
+
+1.0.2
+-----------------
+Fixed issue : Exception thrown when setting a RobotUserID
+
+1.0.1
+-----------------
+Fixed issue : Content creation with non-default language - http://bit.ly/9iNxyb
+Fixed issue : Parent location doesn't update in publisher
+Implemented "defaultLocation" in SQLIContent. You can now get the default location, corresponding to content 'main_node' : $defaultLocation = $sqliContent->defaultLocation; // returns SQLILocation
+
+1.0
+-----------------
+Initial release
